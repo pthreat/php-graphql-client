@@ -65,9 +65,9 @@ class Client
         string $endpointUrl,
         array $authorizationHeaders = [],
         array $httpOptions = [],
-        ClientInterface $httpClient = null,
+        ClientInterface|null $httpClient = null,
         string $requestMethod = 'POST',
-        AuthInterface $auth = null
+        AuthInterface|null $auth = null
     ) {
         $headers = array_merge(
             $authorizationHeaders,
